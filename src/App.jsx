@@ -5,21 +5,21 @@ export const App = () => {
   return (
     <>
       {/* インプットエリア */}
-      <div>
+      <div className="input-area">
         <input placeholder="TODOを入力" type="text" name="" id="" />
         <button>追加</button>
       </div>
 
       {/* 未完了リスト */}
-      <div>
-        <p>未完了のTODO</p>
+      <div className="incomplete-area">
+        <p className="title">未完了のTODO</p>
         <ul>
-          <div>
+          <div className="list-row">
             <li>ああああ</li>
             <button>完了</button>
             <button>削除</button>
           </div>
-          <div>
+          <div className="list-row">
             <li>いいいい</li>
             <button>完了</button>
             <button>削除</button>
@@ -28,14 +28,14 @@ export const App = () => {
       </div>
 
       {/* 完了リスト */}
-      <div>
-        <p>完了したTODO</p>
+      <div className="complete-area">
+        <p className="title">完了したTODO</p>
         <ul>
-          <div>
+          <div className="list-row">
             <li>うううう</li>
             <button>戻す</button>
           </div>
-          <div>
+          <div className="list-row">
             <li>ええええ</li>
             <button>戻す</button>
           </div>
